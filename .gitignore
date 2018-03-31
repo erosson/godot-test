@@ -1,3 +1,5 @@
 .fscache
 .DS_Store
 *.import
+/dist
+/.pck

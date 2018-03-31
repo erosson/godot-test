@@ -21,6 +21,8 @@ func _process(dt):
 	draw()
 
 func draw():
+	# experiment: max float is 1e308 here too, and no formatting is included
+	#get_node("Label").text = "pressed: "+str(self.count)+" ("+str(self.duration)+"s; e"+(str(pow(10, self.count)))+")"
 	get_node("Label").text = "pressed: "+str(self.count)+" ("+str(self.duration)+"s)"
 
 func _on_Increment_pressed():
